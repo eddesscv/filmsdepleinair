@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Tableau de board - gestion films</title>
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Fims en plein air</a>
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Bonjour, Ednilson</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="fa fa-home"></i> Tableau de bord
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-thumb-tack"></i> Articles
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-camera"></i> Médias
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-file"></i> Pages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-comment"></i> Commentaires
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="wp-dashboard.html">
+                                <i class="fa fa-film"></i> Films
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="wp-reservation.html">
+                                <i class="fa fa-calendar"></i> WP-Booking
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-paint-brush"></i> Apparence
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-plug"></i> Extensions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-user"></i> Comptes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-wrench"></i> Outils
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-sliders"></i> Réglages
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <i class="fa fa-wordpress"></i>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div>
+                            <button type="button" class="btn btn-sm">Enregistrer le brouillon</button>
+                            <button type="button" class="btn btn-sm">Prévisualiser</button>
+                            <button type="button" class="btn btn-sm btn-primary">Publier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered border">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-10">Film</th>
+                                <th scope="col" class="col-2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <textarea class="text-area" placeholder="Saisissez le titre" style="min-width: 100%"
+                                        rows="5"></textarea>
+                                </td>
+                                <td rowspan="10" class="borderless">
+
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus
+                                            tellus est, in feugiat libero posuere at.</p>
+                                    </div>
+
+                                    &nbsp;
+                                    <div class=”form-group”>
+                                        <label class="fw-bold">Catégories</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">
+                                                Catégorie 1
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class=”form-group”>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">
+                                                Catégorie 2
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    &nbsp;
+                                    <div class=”form-group”>
+                                        <label class="fw-bold">Etiquettes</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">
+                                                Etiquette 1
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class=”form-group”>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox">
+                                            <label class="form-check-label">
+                                                Etiquette 2
+                                            </label>
+                                        </div>
+                                    </div>
+                                    &nbsp;
+                                    <div>
+                                        <label class="fw-bold">Image mise en avant pour ce film</label>
+                                        <div class="btn btn-sm btn-light mt-1" style="height: 120px; min-width: 95%">
+                                            Ajouter la vidéo</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Synopsie
+                                    <textarea class="text-area" placeholder="Synopsie" style="min-width: 100%"
+                                        rows="5"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Genre
+                                    <br />
+                                    <select name="genre" id="genre">
+                                        <option value="">--Selectionnez le genre--</option>
+                                        <option value="action">Action</option>
+                                        <option value="comedie">Comédie</option>
+                                        <option value="science-fiction">Science-Fiction</option>
+                                        <option value="historique">Historique</option>
+                                        <option value="horreur">Horreur</option>
+                                        <option value="policier">Policier</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Date de sortie
+                                    <br />
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Avec
+                                    <br />
+                                    <input type="text" placeholder="Avec..."> ajouter
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Date de séance
+                                    <br />
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Séance
+                                    <br />
+                                    <select name="seance" id="sceance">
+                                        <option value="">--Selectionnez la séance--</option>
+                                        <option value="1st">18:00 20:00 Film X</option>
+                                        <option value="3rd">20:00 22:00 Film Z</option>
+                                        <option value="4th">22:00 00:00 Film U</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Durée
+                                    <br />
+                                    <input type="text" placeholder="1h35">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Réalisateur
+                                    <br />
+                                    <input type="text" class="" placeholder="De..."> ajouter
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Bande-annonce
+                                    <div class="border bg-light" style="height: 100px"></div>
+                                    <button type="button" class="btn btn-sm btn-primary mt-1">Ajouter la vidéo</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+        integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+        crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
